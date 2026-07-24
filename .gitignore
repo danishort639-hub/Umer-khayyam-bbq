@@ -1,34 +1,251 @@
-# Gradle files
-.gradle/
-build/
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Umer Khayyam BBQ</title>
 
-# Local configuration file (sdk path, etc)
-local.properties
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
 
-# Log/OS Files
-*.log
+body{
+background:#111;
+color:#fff;
+}
 
-# Android Studio generated files and folders
-captures/
-.externalNativeBuild/
-.cxx/
-*.aab
-*.apk
-output-metadata.json
+header{
+background:#000;
+padding:15px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+position:sticky;
+top:0;
+}
 
-# IntelliJ
-*.iml
-.idea/
-misc.xml
-deploymentTargetDropDown.xml
-render.experimental.xml
+header h1{
+color:red;
+}
 
-# Keystore files
-*.jks
-*.keystore
+nav a{
+color:white;
+margin:10px;
+text-decoration:none;
+}
 
-# Google Services (e.g. APIs or Firebase)
-google-services.json
+.hero{
+background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+url("https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?auto=format&fit=crop&w=1600&q=80");
+background-size:cover;
+background-position:center;
+height:80vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+}
 
-# Android Profiling
-*.hprof
+.hero h2{
+font-size:50px;
+}
+
+.hero p{
+margin:20px;
+font-size:20px;
+}
+
+.btn{
+display:inline-block;
+padding:15px 30px;
+background:red;
+color:white;
+text-decoration:none;
+border-radius:30px;
+margin:10px;
+}
+
+section{
+padding:50px 10%;
+}
+
+h2{
+color:red;
+margin-bottom:20px;
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+margin-top:20px;
+}
+
+th{
+background:red;
+padding:15px;
+}
+
+td{
+padding:15px;
+border:1px solid #555;
+text-align:center;
+}
+
+tr:nth-child(even){
+background:#222;
+}
+
+.contact{
+text-align:center;
+}
+
+footer{
+background:#000;
+text-align:center;
+padding:20px;
+margin-top:40px;
+}
+
+@media(max-width:768px){
+
+header{
+flex-direction:column;
+}
+
+.hero h2{
+font-size:35px;
+}
+
+table{
+font-size:14px;
+}
+
+}
+</style>
+
+</head>
+<body>
+
+<header>
+
+<h1>Umer Khayyam BBQ</h1>
+
+<nav>
+<a href="#about">About</a>
+<a href="#menu">Menu</a>
+<a href="#contact">Contact</a>
+</nav>
+
+</header>
+
+<section class="hero">
+
+<div>
+
+<h2>Authentic Pakistani BBQ</h2>
+
+<p>Serving Delicious BBQ Since 2009</p>
+
+<a class="btn" href="#menu">View Menu</a>
+
+<a class="btn" href="https://wa.me/923006046400">
+Order on WhatsApp
+</a>
+
+</div>
+
+</section>
+
+<section id="about">
+
+<h2>About Us</h2>
+
+<p>
+
+Welcome to <b>Umer Khayyam BBQ</b>.
+
+We are proudly serving delicious BBQ in Sargodha since <b>2009</b>.
+
+Fresh ingredients, traditional recipes and quality service have made us one of the favorite BBQ restaurants in the area.
+
+</p>
+
+<br>
+
+<p>
+
+<b>Founder & CEO</b><br>
+
+Muhammad Nasser Nazir Bhatti
+
+</p>
+
+</section>
+
+<section id="menu">
+
+<h2>BBQ Menu</h2>
+
+<table>
+
+<tr>
+<th>Item</th>
+<th>Price</th>
+</tr>
+
+<tr><td>Beef Kabab</td><td>Rs.130</td></tr>
+<tr><td>Chicken Kabab</td><td>Rs.140</td></tr>
+<tr><td>Chicken Tikka</td><td>Rs.160</td></tr>
+<tr><td>Beef Tikka</td><td>Rs.130</td></tr>
+<tr><td>Chicken Boneless Tikka</td><td>Rs.180</td></tr>
+<tr><td>Leg Piece</td><td>Rs.400</td></tr>
+<tr><td>Chest Piece</td><td>Rs.430</td></tr>
+<tr><td>Malai Boti</td><td>Rs.350</td></tr>
+
+</table>
+
+</section>
+
+<section id="contact" class="contact">
+
+<h2>Contact Us</h2>
+
+<p><b>Location:</b><br>
+Khayyam Chowk, Railway Road, Sargodha
+</p>
+
+<br>
+
+<p>
+
+<b>Phone:</b><br>
+
+<a style="color:white;" href="tel:+923006046400">
+0300-6046400
+</a>
+
+</p>
+
+<br>
+
+<a class="btn"
+href="https://wa.me/923006046400?text=Hello%20Umer%20Khayyam%20BBQ,%20I%20would%20like%20to%20place%20an%20order.">
+Order Now
+</a>
+
+</section>
+
+<footer>
+
+<p>© 2026 Umer Khayyam BBQ</p>
+
+<p>Since 2009</p>
+
+</footer>
+
+</body>
+</html>
